@@ -1,0 +1,63 @@
+<div class="container-fluid mt-3" id="form-box">
+    <div class="row">
+    <div class="col-md-4 col-sm-12"></div>
+    <div class="col-md-4 col-sm-12">
+        <div class="card border-light mb3">
+            <div class="card-header justify-content-center">
+                <h4>Sign-up</h4>
+            </div>
+            <div class="card-body">
+               <!-- <form action="" method="POST"> -->
+                    <span class="text-success" style="display: none;" id="confirm">Verification mail sent to registered email please confirm and login</span>
+                    <span class="text-danger" style="display: none;" id="confirm-err">Something went wrong</span>
+                    
+                    <div class="form-group">
+                        <label for="role">choose role:</label>
+                        <select name="role" id="role" class="form-control">
+                            <option value="0">Job seeker</option>
+                            <option value="1">job keeper</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="enter display name">
+                        <span class="text-danger" id="err-name"></span>
+                    </div>
+                    
+
+                    <div class="form-group mt-2">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="someone@example.com">
+                        <span class="text-danger" id="err-mail"></span>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Password">
+                        <span class="text-danger" id="err-pass"></span>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="cpassword">confirm Password</label>
+                        <input type="password" class="form-control" id="cpasswd" name="cpasswd" placeholder="re enter Password">
+                        <span class="text-danger" id="err-cpass"></span>
+                    </div>
+                    
+
+                    <span class="text-danger" id="err-com"></span>
+
+
+                    <div class="form-group justify-content-center" align="center">
+                        <button class="btn btn-secondary" onclick="register()">Register</button>
+                    </div>
+
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12"></div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+Application Name:	RxEmploy
+Credential Type:	OAuth 2.0 Client ID and Secret
+Client ID:	17301c356059f4afc6b6af77db421732250f8e43a250e661a78b02a2d5d1fba1
+Client Secret:	EvDZ1JOS9cXK9FFbwkr9LVKSXopuqo4L0MCu2K06bF8WdLeFwANK9F9jccux3XCW
+Redirect URL:	https://rxemploy.com/
+
+
+
+https://opensource.indeedeng.io/api-documentation/docs/oauth/?hl=en&subject=OAuth+API+Documentation

@@ -1,0 +1,14 @@
+.job-description  {
+    height: 100px;
+    overflow: auto;
+}
+
+.job-title  {
+    height: 75px;
+    overflow: auto;
+}
+
+.job-company  {
+    height: 30px;
+    overflow: auto;
+}

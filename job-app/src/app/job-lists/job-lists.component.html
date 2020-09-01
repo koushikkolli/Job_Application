@@ -1,0 +1,45 @@
+<br />
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <h5>What</h5>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Search"
+        aria-label="Search"
+        [(ngModel)]="keyWord"
+        placeholder="Job title, keywords, or company"
+      />
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <h5>Where</h5>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Search"
+        aria-label="Search"
+        [(ngModel)]="keyWhere"
+        placeholder="City or State"
+      />
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <h5>&nbsp;</h5>
+      <button class="btn btn-primary" (click)="onFindJobs()">Find Jobs</button>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div
+    class="col-sm-12 col-md-6 col-lg-4 col-xl-4 job-card"
+    *ngFor="let temp of listOfJobs; let i = index"
+  >
+    <app-job [job]="listOfJobs[i]" [index]="i"></app-job>
+  </div>
+</div>

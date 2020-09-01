@@ -1,0 +1,22 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="job-title card-title">{{ job.jobTitle }}</h5>
+    <h6 class="job-company card-subtitle mb-2 text-muted">{{ job.company }}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{ job.location }}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{ job.date }}</h6>
+    <!--
+    <p class="job-description card-text">{{ job.summary }}</p>
+    -->
+    <!--
+    <a class="card-link text-primary" routerLink="/auth" *ngIf="!isLoggedIn"><small>Login to continue</small></a>
+    
+        Old apply option
+       <button class="card-link btn btn-primary" (click)="onApply()" *ngIf="isLoggedIn">Apply</button>
+       
+    <a class="btn btn-info" role="button" (click)="onViewJob()">Apply</a>
+    -->
+    <a class="card-link text-primary" (click)="onViewJob()"><small>View Job</small></a>
+    |
+    <a class="card-link text-primary" (click)="onDelete()"><small>Not Interested</small></a>
+  </div>
+</div>
